@@ -1,6 +1,6 @@
 # -------------------backend-repo----------------------
 
-1.  bash`npm install --force`
+1.  `npm install --force`
 
 2.  create collection in `firebase firestore` , using name "users" , than
     create field document
@@ -21,7 +21,7 @@
 - FB_MEASURE_ID=for-fb
 - REFRESH_TOKEN_SECRET=for-jwt
 
-4. bash`npm run dev` "for development staging"
-5. bash`npm run build` "for compiling in JS code"
-6. bash`npm run start` "for production staging "
+4. `npm run dev` "for development staging"
+5. `npm run build` "for compiling in JS code"
+6. `npm run start` "for production staging "
 7. You can using example call API in file `rest.http`
