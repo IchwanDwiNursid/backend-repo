@@ -25,6 +25,8 @@ export class UserService {
   static async register(req: RegisterRequest): Promise<UserResponse> {
     const request = await Validation.validate(UserValidation.REGISTER, req);
 
+    console.log("===========>" + process.env.FB_API_KEY);
+
     let checkUser = await getByField("email", request.email);
 
     if (checkUser != "[]") {

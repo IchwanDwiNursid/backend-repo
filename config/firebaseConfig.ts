@@ -7,13 +7,13 @@ dotenv.config();
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyAJ1tNl5-o0ZkRrnDTsg6VagWmWVC4fxrI",
-  authDomain: "backend-repo-33082.firebaseapp.com",
-  projectId: "backend-repo-33082",
-  storageBucket: "backend-repo-33082.appspot.com",
-  messagingSenderId: "478319758734",
-  appId: "1:478319758734:web:5814fd5606df027d6728df",
-  measurementId: "G-X08WKP7F67",
+  apiKey: process.env.FB_API_KEY,
+  authDomain: process.env.FB_AUTH_DOMAIN,
+  projectId: process.env.FB_PROJECT_ID,
+  storageBucket: process.env.FB_STORAGE_BUCKET,
+  messagingSenderId: process.env.FB_MESSAGE_ID,
+  appId: process.env.FB_APP_ID,
+  measurementId: process.env.FB_MEASURE_ID,
 };
 
 const app = initializeApp(firebaseConfig);
