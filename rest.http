@@ -1,0 +1,39 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name":"xxx",
+    "email" : "xxx@gmail.com",
+    "password" : "xxx123"
+}
+
+###
+# Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "password" : "xxx",
+    "email" : "xxx@gmail.com"
+}
+
+### Get All
+GET http://localhost:3000/fetch-user-data
+Content-Type: application/json
+
+### Get By Id
+GET http://localhost:3000/fetch-user-data/xxx
+Content-Type: application/json
+
+### Update Data
+PATCH  http://localhost:3000/update-user-data
+Content-Type: application/json
+
+{
+    "email" : "xxx"
+}
+
+### Logout Data
+
+DELETE  http://localhost:3000/logout
+Content-Type: application/json
